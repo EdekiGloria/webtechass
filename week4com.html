@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            /* padding: 0%; */
+            margin: 0%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        header{
+            background-color: #293A4A;
+            height: 30px;
+            width: 100%;
+            padding: 5px 10px ;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        p{
+            font-size: 20px;
+        }
+        .logo{
+            height: 25px;
+            margin-right: 7px;
+            border-radius: 10px;
+        }
+        .text-white{
+            color: #fff;
+        }
+        .container{
+            
+            width: 80%;
+            margin-top: 10px;
+            /* border:solid red 2px; */
+            
+        }
+        .alert-wrapper{
+            display: flex;
+            flex-direction: row;
+
+        }
+        .alert{
+            display: flex;
+            height: 30px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            /* width: 100%; */
+            border-left-width: 2px ;
+            border-left:solid #2880b9 ;
+            background-color: #d7ecf9;
+            padding: 5px;
+            align-items: center;
+            
+        }
+        .f12{
+            font-size: 12px;
+            
+        }
+        .m12{
+            margin-left: 12px;
+        }
+        .ml1{
+            margin-left: 2px;
+        }
+        .box{
+
+            border: dashed #ccc ;
+            border-radius: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            height: 100px;
+        }
+        .mtb{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .button-primary{
+            background-color: #3175b1;
+            color: #fff;
+            font-size: 10px;
+            /* height: 30px; */
+            padding: 5px 10px;
+            border-width: 0px;
+            border-radius: 2px;
+            cursor: pointer;
+
+        }
+        .button-primary:hover{
+            background-color: #ccc;
+        }
+        .load{
+            margin-top: 5px;
+            width: 41%;
+            background-color: rgb(38, 218, 38);
+            color: #fff;
+            border-radius: 5px;
+            border: 0px;
+        }
+        
+
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="flag.png" alt="" class="logo">
+        <label for="logo" class=" text-white">File Upload</label>
+
+    </header>
+
+    <div class="container">
+        <p>Select the file you want to upload to '/home/pagesch1/public_html/staff.pageschoolsportal.org'</p>
+        
+        <div class="alert" >
+            <label for="" class="f10 m12">Maximum file size allowed for upload: 1.42gb</label>
+        </div>
+        <div style="display: flex; align-items: center;"><input type="checkbox" name=""><span class="f12 ml1">Override existing files</span></div>
+        
+        <div class="box">
+            <p >Drop files here to start upload</p>
+            <p class="mtb">or</p>
+            <button type="button" class="button-primary">Select file</button>
+           
+        </div>
+        <div>
+            <b><span>build.zip</span></b><br>
+            <button class="load" type="button">100%</button><br>
+             <span style="color: rgb(113, 113, 113);">14.04 MB complete</span><br><br><br>
+             <p> <span style="color: #2096e4; margin-left: 400px;"> "/home/pagesch1/public_html/staff.pageschoolsportal.org"</span></p>
+        </div>
+        
+
+    </div>
+    
+
+
+
+
+
+
+
+
+</body>
+</html>
